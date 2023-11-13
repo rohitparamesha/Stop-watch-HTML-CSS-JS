@@ -107,6 +107,7 @@ h1{
 .btns .btn{
     padding: 0.3rem 0.8rem;
     width: 80px;
+    height: 30px;
     font-size: 0.8rem;
     background: linear-gradient(to left,#b92b27,#1565C0);
     border: none;

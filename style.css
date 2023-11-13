@@ -136,5 +136,10 @@ h1{
         flex-direction: column;
         justify-content: center;
     }
+
+    .watch{
+        width: 300px;
+    }
+
 }
 

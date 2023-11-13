@@ -133,12 +133,22 @@ h1{
 
 @media (max-width:768px) {
     html{
-        font-size: 85%;
+        font-size: 95%;
     }
     body{
         flex-direction: column;
         justify-content: center;
     }
+    .watch{
+        width: 25rem;
+        padding: 1rem;
+    }
 
+}
+
+@media (max-width:368px){
+    .watch{
+        width: 22rem;
+    }
 }
 

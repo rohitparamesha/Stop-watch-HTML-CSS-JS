@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: #373B44;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+h1{
+    background: linear-gradient(to right,#b92b27,#1565C0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.watch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #373B44;
+    width: 400px;
+    max-width: 600px;
+    height: 300px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.watch::before{
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 150px;
+    background: linear-gradient(to bottom,#b92b27,#1565C0);
+    border-radius: 10px;
+    animation: anime 5s linear infinite;
+}
+
+@keyframes anime {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.watch::after{
+    content: '';
+    position: absolute;
+    background: #373B44;
+    inset: 4px;
+    border-radius: 7px;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1;
+    background: linear-gradient(to top left,#b92b27,#1565C0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .time > div{
+    font-size: 2.5rem;
+} */
+
+.text-small{
+    font-size: 1rem;
+    color: coral;
+    opacity: 1;
+    background: linear-gradient(to left,#b92b27,#1565C0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btns{
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+    z-index: 1;
+}
+
+.btns .btn{
+    padding: 0.3rem 0.8rem;
+    width: 80px;
+    font-size: 0.8rem;
+    background: linear-gradient(to left,#b92b27,#1565C0);
+    border: none;
+    transform: skew(-15deg);
+    color: #fff;
+    transition: opacity 0.3s ease;
+}
+
+.btns .btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.footer{
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    font-weight: bold;
+    background: linear-gradient(to left,#b92b27,#1565C0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:768px) {
+    body{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+

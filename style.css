@@ -107,7 +107,7 @@ h1{
 .btns .btn{
     padding: 0.3rem 0.8rem;
     width: 80px;
-    height: 30px;
+    height: 34px;
     font-size: 0.8rem;
     background: linear-gradient(to left,#b92b27,#1565C0);
     border: none;
@@ -147,9 +147,9 @@ h1{
 
 }
 
-@media (max-width:368px){
+@media (max-width:380px){
     .watch{
-        width: 22rem;
+        width: 20rem;
     }
 }
 

@@ -145,6 +145,10 @@ h1{
         padding: 1rem;
     }
 
+    .btns .btn{
+        padding: 0.5rem 1rem;
+    }
+
 }
 
 @media (max-width:380px){
